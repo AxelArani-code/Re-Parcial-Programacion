@@ -13,13 +13,18 @@
 
 <body id="page-top">
     <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav">
-        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#">AXEL</a><button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
-                value="Menu"><i class="fa fa-bars"></i></button>
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#">AXEL</a><button data-toggle="collapse"
+                class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i
+                    class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link active js-scroll-trigger" href="#about">Inicio</a></li>
-                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" href="#download">Ejemplos</a></li>
-                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" href="#contact">contact</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link active js-scroll-trigger"
+                            href="#about">Inicio</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger"
+                            href="#download">Ejemplos</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger"
+                            href="#contact">contact</a></li>
                 </ul>
             </div>
         </div>
@@ -30,7 +35,9 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h1 class="brand-heading">Programacion</h1>
-                        <p class="intro-text">Presento algunos, ejercisio con funciones&nbsp;</p><a class="btn btn-link btn-circle" role="button" href="#about"><i class="fa fa-angle-double-down animated"></i></a></div>
+                        <p class="intro-text">Presentación &nbsp;</p><a class="btn btn-link btn-circle" role="button"
+                            href="#about"><i class="fa fa-angle-double-down animated"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,37 +46,73 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2>Ejemplos en php</h2>
-                    <p><br>Hola soy<br>axel aranibar, con este proyecto quiero presentar algunas funciones que se<br>pueden realizar con php. Primero si no sabes que son las funciones te dejo contenido del mismo. <br>Luego veras algunos ejemplos, saludos.
-                        <br><br><br>&nbsp;<a href="#">Documentacion sobre Funsiones en PHP&nbsp;</a></p>
-                    <p>This theme features stock photos by&nbsp;<a href="#">Gratisography</a>&nbsp;along with a custom Google Maps skin courtesy of&nbsp;<a href="#">Snazzy Maps</a>.</p>
-                    <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
+                    <h2>Hola, soy Axel Aranibar</h2>
+                    <p><br>Realice este proyecto que se trata de una calculadora con funciones.
+                        <br> Espero que le guste 😊 <br>
+                        <br>Si quiere ver el codigo completo le dejo el repositorio
+
+                        <br><br><br>&nbsp;<a href="#">Repositorio de proyecto&nbsp;</a>
+                    </p>
+
                 </div>
             </div>
         </div>
     </section>
-    <section id="download" class="download-section content-section text-center" style="background-image:url('assets/img/downloads-bg.jpg');">
+    <section id="download" class="download-section content-section text-center"
+        style="background-image:url('assets/img/downloads-bg.jpg');">
         <div class="container">
             <div class="col-lg-8 mx-auto">
-                <h1>Php</h1>
-                <p>You can download Grayscale for free on the preview page.</p>
-                <ul class="list-inline banner-social-buttons">
-                    <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-google-plus fa-fw"></i><span class="network-name">&nbsp; Goog+</span></button></li>
-                    <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-twitter fa-fw"></i><span class="network-name">&nbsp;Twitter</span></button></li>
-                    <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-github fa-fw"></i><span class="network-name">&nbsp;github</span></button></li>
-                </ul><button class="btn btn-primary btn-lg btn-default" type="button">visit download page</button></div>
+                <form class="custom-form"  action="procesar.php" method="post">
+                    <h1>Calculadora</h1>
+
+                    <div class="form-row form-group">
+                        <div class="col-sm-4 label-column">
+                         <label for="" class="form-label">Valor 1</label>
+                            </div>
+                        <div class="col-sm-6 input-column">
+                            <input type="text"  class="form-control" name="val1" id="">
+                        </div>
+                    </div>
+
+                    <div class="form-row form-group">
+                        <div class="col-sm-4 label-column">
+                            <label for="" class="form-label">Valor 2 </label>
+                            </div>
+                        <div class="col-sm-6 input-column">
+                            <input type="text" class="form-control" name="val2" id="">
+                        </div>
+                    </div>
+                    <div class="col-sm-4 input-column">
+                        <select name="opcion" class="btn btn-light dropdown-toggle" id="">
+                            <option value="suma">suma</option>
+                            <option value="resta">resta</option>
+                            <option value="dividir">dividir</option>
+                            <option value="multiplicar">multiplicar</option>
+                        </select>
+                    </div>
+                
+                    <button class="btn btn-primary">Calcular</button>
+                </form>
+            </div>
         </div>
     </section>
     <section id="contact" class="content-section text-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2>Contact us</h2>
-                    <p>Feel free to leave us a comment on the<a href="#">&nbsp;Grayscale template overview page</a>&nbsp;to give some feedback about this theme!</p>
+                    <h2>Contactos</h2>
+
                     <ul class="list-inline banner-social-buttons">
-                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-google-plus fa-fw"></i><span class="network-name">&nbsp; Google+</span></button></li>
-                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-twitter fa-fw"></i><span class="network-name">&nbsp;Twitter</span></button></li>
-                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-github fa-fw"></i><span class="network-name">&nbsp;github</span></button></li>
+                        <li class="list-inline-item">&nbsp;<a href="https://www.instagram.com/axel_aranibar/?hl=es"
+                                class="btn btn-primary btn-lg btn-default" type="button"><i
+                                    class="fa fa-instagram fa-fw"></i><span class="network-name">Intagram</span></a>
+                        </li>
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default"
+                                type="button"><i class="fa fa-twitter fa-fw"></i><span
+                                    class="network-name">&nbsp;Twitter</span></button></li>
+                        <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default"
+                                type="button"><i class="fa fa-github fa-fw"></i><span
+                                    class="network-name">&nbsp;github</span></button></li>
                     </ul>
                 </div>
             </div>
@@ -78,7 +121,7 @@
     <div class="map-clean"></div>
     <footer>
         <div class="container text-center">
-            <p>Copyright ©&nbsp;Brand 2021</p>
+            <p>Axel Aranibar ©&nbsp; 2021</p>
         </div>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
